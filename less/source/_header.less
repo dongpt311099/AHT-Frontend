@@ -1,79 +1,96 @@
-.header-top{
-    height: 47px;
-    background-color: #222;
-    color: #525252;
-    display: flex;
-    &-inner{
+.header{
+    border-bottom: 1px solid #ddd;
+
+    .header-top{
+        height: 47px;
+        background-color: #222;
+        color: #525252;
         display: flex;
-        justify-content: space-between;
-        padding: 0 15px;
-        height: 100%;
-        &-item{
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
             height: 100%;
-            align-items: center;
-        }
-        .welcome{
-            display: flex;
-        }
-        .bookmark{
-            margin-right: 7px;
-        }
-    }
-    &-shop{
-        display: flex;
-        .header{
-            margin: 0 10px;
-        }
-        .shop-setting-top{
-            display: flex;
-            .icon{
-                padding: 0 10px;
+            &-item{
+                height: 100%;
+                align-items: center;
             }
-        }.shop-setting-lock{
-            display: flex;
-            .icon{
-                padding: 0 10px;
+            .welcome{
+                display: flex;
+            }
+            .bookmark{
+                margin-right: 7px;
             }
         }
-    }
-}
-.header-bottom{
-    &-inner{
-        padding: 20px 0;
-        margin: 0 15px;
-        .flex();
-        .nav-icon{
-            display: none;
-        }
-        .navbar{
-            padding: 15px 0;
-            font-weight: bold;
-            .nav-item{
-                display: inline-block;
-                margin-left: 28px;
-                margin-right: 29px;
-                font-family: 'Montserrat', sans-serif;
-                a{
-                    text-transform: uppercase;
-                    color: #000;
+        &-shop{
+            display: flex;
+            .header{
+                margin: 0 10px;
+            }
+            .shop-setting-top{
+                display: flex;
+                .icon{
+                    padding: 0 10px;
                 }
-                &.active{
+            }.shop-setting-lock{
+                display: flex;
+                .icon{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .header-bottom{
+        &-inner{
+            padding: 20px 0;
+            margin: 0 15px;
+            .flex();
+            .nav-icon{
+                display: none;
+            }
+            .navbar{
+                padding: 15px 0;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                .nav-item{
+                    display: inline-block;
+                    margin-left: 28px;
+                    margin-right: 29px;
+                    &:hover{
+                        a{
+                            color: #8262b5;
+                        }
+                    }
                     a{
-                        color: #8262b5;
+                        color: #000;
+                        
+                    }
+                    &.active{
+                        a{
+                            color: #8262b5;
+                        }
                     }
                 }
-            }
-            .nav-search{
-                margin-left: 28px;
+                .nav-search{
+                    margin-left: 28px;
+                }
             }
         }
-    }
-    .mobile-menu{
-        display: none;
-    }
-    .navbar-tool{
-        .navbar-tool-item{
-            margin: 0 15px;
+        .mobile-menu{
+            display: none;
+        }
+        .navbar-tool{
+            .navbar-tool-item{
+                margin: 0 15px;
+                i {
+                    font-size: 30px;
+                    // padding-left: 28px;
+                    color: #000;
+                }
+            }
         }
     }
 }
+

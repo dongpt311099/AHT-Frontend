@@ -53,7 +53,6 @@
     }
     &-right{
         .cols(33.33%);
-        text-transform: uppercase;
         &-item{
             &-inner {
                 cursor: pointer;
@@ -80,15 +79,22 @@
                 .transformer(translate(0, -50%));
 
                 .top-title-sub{
-                    color: #616161;
                     font-size: 16px;
+                    color: #616161;
+                    letter-spacing: 3px;
+                    line-height: 20px;
+                    text-transform: uppercase;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 13px;
+                    font-weight: 400;
+
                 }
                 .top-title{
-                    color: #000000;
-                    font-weight: bold;
                     font-size: 20px;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 15px;
                 }
                 .btn-container{
                     // text-align: right;
@@ -131,14 +137,16 @@
                 display: inline-block;
                 background-color: #fff;
                 text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-weight: 400;
                 padding: 15px 17px;
                 color: #000;
             }
             .title{
                 font-size: 20px;
                 padding-bottom: 7px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: bold;
+                font-family: 'Montserrat';
+                font-weight: 400;
             }
             .rate{
                 padding-top: 7px;
@@ -203,19 +211,24 @@
     .title{
         text-align: center;
         text-transform: uppercase;
-        font-weight: bold;
         .title-top{
             font-size: 12px;
             color: #8262b5;
             padding-top: 80px;
             padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-weight: 700;
             font-family: 'Montserrat', sans-serif;
         }
         .title-bottom{
             font-size: 24px;
+            letter-spacing: 2px;
             padding-top: 10px;
             padding-bottom: 29px;
             font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
         }
     }
     .blog-item {
@@ -268,7 +281,14 @@
                 font-size: 14px;
                 padding-bottom: 20px;
                 border-bottom: 1px solid #ededed;
-                font-family: 'Open Sans', sans-serif;
+
+                
+                font-size: 14px;
+                line-height: 22px;
+                color: #424242;
+                letter-spacing: 0.2px;
+                font-family: 'OpenSans',sans-serif;
+                
             }
             .icons{
                 display: flex;

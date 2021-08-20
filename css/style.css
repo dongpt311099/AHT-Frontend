@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../../fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../../fonts/Poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../../fonts/Poppins/Poppins-SemiBold/ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../fonts/OpenSans/OpenSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../fonts/Pacifico/Pacifico-Regular.ttf');
+  font-weight: 400;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -54,81 +89,92 @@ p {
   opacity: 0.5;
   transition: all 0.5s ease;
 }
-.header-top {
+.header {
+  border-bottom: 1px solid #ddd;
+}
+.header .header-top {
   height: 47px;
   background-color: #222;
   color: #525252;
   display: flex;
 }
-.header-top-inner {
+.header .header-top-inner {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
   height: 100%;
 }
-.header-top-inner-item {
+.header .header-top-inner-item {
   height: 100%;
   align-items: center;
 }
-.header-top-inner .welcome {
+.header .header-top-inner .welcome {
   display: flex;
 }
-.header-top-inner .bookmark {
+.header .header-top-inner .bookmark {
   margin-right: 7px;
 }
-.header-top-shop {
+.header .header-top-shop {
   display: flex;
 }
-.header-top-shop .header {
+.header .header-top-shop .header {
   margin: 0 10px;
 }
-.header-top-shop .shop-setting-top {
+.header .header-top-shop .shop-setting-top {
   display: flex;
 }
-.header-top-shop .shop-setting-top .icon {
+.header .header-top-shop .shop-setting-top .icon {
   padding: 0 10px;
 }
-.header-top-shop .shop-setting-lock {
+.header .header-top-shop .shop-setting-lock {
   display: flex;
 }
-.header-top-shop .shop-setting-lock .icon {
+.header .header-top-shop .shop-setting-lock .icon {
   padding: 0 10px;
 }
-.header-bottom-inner {
+.header .header-bottom-inner {
   padding: 20px 0;
   margin: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-bottom-inner .nav-icon {
+.header .header-bottom-inner .nav-icon {
   display: none;
 }
-.header-bottom-inner .navbar {
+.header .header-bottom-inner .navbar {
   padding: 15px 0;
-  font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
 }
-.header-bottom-inner .navbar .nav-item {
+.header .header-bottom-inner .navbar .nav-item {
   display: inline-block;
   margin-left: 28px;
   margin-right: 29px;
-  font-family: 'Montserrat', sans-serif;
 }
-.header-bottom-inner .navbar .nav-item a {
-  text-transform: uppercase;
-  color: #000;
-}
-.header-bottom-inner .navbar .nav-item.active a {
+.header .header-bottom-inner .navbar .nav-item:hover a {
   color: #8262b5;
 }
-.header-bottom-inner .navbar .nav-search {
+.header .header-bottom-inner .navbar .nav-item a {
+  color: #000;
+}
+.header .header-bottom-inner .navbar .nav-item.active a {
+  color: #8262b5;
+}
+.header .header-bottom-inner .navbar .nav-search {
   margin-left: 28px;
 }
-.header-bottom .mobile-menu {
+.header .header-bottom .mobile-menu {
   display: none;
 }
-.header-bottom .navbar-tool .navbar-tool-item {
+.header .header-bottom .navbar-tool .navbar-tool-item {
   margin: 0 15px;
+}
+.header .header-bottom .navbar-tool .navbar-tool-item i {
+  font-size: 30px;
+  color: #000;
 }
 .banner {
   margin: 30px 0;
@@ -200,7 +246,6 @@ p {
   width: 33.33%;
   padding: 0 15px;
   box-sizing: border-box;
-  text-transform: uppercase;
 }
 .banner-right-item {
   overflow: hidden;
@@ -238,15 +283,21 @@ p {
   -o-transform: translate(0, -50%);
 }
 .banner-right-item-content .top-title-sub {
-  color: #616161;
   font-size: 16px;
+  color: #616161;
+  letter-spacing: 3px;
+  line-height: 20px;
+  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-weight: 400;
 }
 .banner-right-item-content .top-title {
-  color: #000000;
-  font-weight: bold;
   font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 .banner-right-item-content .btn-container {
   position: relative;
@@ -280,14 +331,16 @@ p {
   display: inline-block;
   background-color: #fff;
   text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 400;
   padding: 15px 17px;
   color: #000;
 }
 .product-container .product-items .product-info .title {
   font-size: 20px;
   padding-bottom: 7px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 .product-container .product-items .product-info .rate {
   padding-top: 7px;
@@ -353,20 +406,25 @@ p {
 .blog .title {
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .blog .title .title-top {
   font-size: 12px;
   color: #8262b5;
   padding-top: 80px;
   padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
 .blog .title .title-bottom {
   font-size: 24px;
+  letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 29px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .blog .blog-item {
   display: flex;
@@ -414,10 +472,13 @@ p {
 }
 .blog .blog-item-content .description {
   padding-left: 20px;
-  font-size: 14px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #424242;
+  letter-spacing: 0.2px;
+  font-family: 'OpenSans', sans-serif;
 }
 .blog .blog-item-content .icons {
   display: flex;
@@ -608,7 +669,7 @@ p {
     font-size: 30px;
   }
   .product-items .product-info .col {
-    width: 33.33%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 576px) {
