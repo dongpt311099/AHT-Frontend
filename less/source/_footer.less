@@ -1,0 +1,83 @@
+.footer{
+    background-color: #222222;
+    &-inner{
+        display: flex;
+        flex-direction: column;
+        color: #7a7a7a;
+        padding-top: 64px;
+        
+        .footer-info{
+            .flex();
+            align-items: flex-start;
+            padding-bottom: 30px;
+            .title{
+                color:  #fff;
+                padding-bottom: 25px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #7a7a7a;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+            }
+            .content{
+                line-height: 1.4;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .footer-icon-social{
+                padding-top: 50px;
+            }
+            .social-icon{
+                color: #7a7a7a;
+                padding-right: 17px;
+            }
+            .footer-navigation{
+                .navigation-content{
+                    .flex();
+                    .footer-navigation-link{
+                        color: #7a7a7a;
+                    }
+                    .footer-navigation-items{
+                        // padding-right: 68px;
+                        .footer-navigation-item{
+                            padding-top: 6px;
+                            padding-bottom: 7px;
+                        }
+                    }
+                    
+                }
+            }
+            .footer-location{
+                .location-items, .location-item-text{
+                    color: #7a7a7a;
+                    .location-item{
+                        padding-top: 6px;
+                        padding-bottom: 7px;
+                    }
+                }
+                .location{
+                    padding: 0 23px;
+                }
+            }
+        }
+
+        .footer-bottom{
+            .flex();
+            height: 71px;
+            border-top: 1px solid #393939;
+            .wrapper{
+                .flex();
+                .footer-copyright{
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+            .arrowHitech{
+                color: #fff;
+            }
+            .footer-payment{
+                .payment{
+                    color: #7a7a7a;
+                }
+            }
+        }
+    }
+    
+}
