@@ -93,7 +93,7 @@ p {
   border-bottom: 1px solid #ddd;
 }
 .header .header-top {
-  height: 47px;
+  height: 45px;
   background-color: #222;
   color: #525252;
   display: flex;
@@ -143,7 +143,6 @@ p {
   display: none;
 }
 .header .header-bottom-inner .navbar {
-  padding: 15px 0;
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
@@ -151,8 +150,7 @@ p {
 }
 .header .header-bottom-inner .navbar .nav-item {
   display: inline-block;
-  margin-left: 28px;
-  margin-right: 29px;
+  margin-right: 50px;
 }
 .header .header-bottom-inner .navbar .nav-item:hover a {
   color: #8262b5;
@@ -163,31 +161,34 @@ p {
 .header .header-bottom-inner .navbar .nav-item.active a {
   color: #8262b5;
 }
-.header .header-bottom-inner .navbar .nav-search {
-  margin-left: 28px;
+.header .header-bottom-inner .navbar-logo {
+  width: 200px;
+  height: 40px;
+}
+.header .header-bottom-inner .navbar-tool .navbar-tool-item i {
+  font-size: 30px;
+  padding-left: 10px;
+  color: #000;
 }
 .header .header-bottom .mobile-menu {
   display: none;
 }
-.header .header-bottom .navbar-tool .navbar-tool-item {
-  margin: 0 15px;
-}
-.header .header-bottom .navbar-tool .navbar-tool-item i {
-  font-size: 30px;
-  color: #000;
-}
 .banner {
   margin: 30px 0;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 .banner .banner-col {
   margin: -15px 0;
 }
 .banner .btn-shop-now {
   background-color: #8262b5;
-  padding: 15px;
+  padding: 13px 17px;
   text-transform: capitalize;
   color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
 }
 .banner-left {
   width: 66.67%;
@@ -221,11 +222,11 @@ p {
   position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translate(0, 170%);
-  -webkit-transform: translate(0, 170%);
-  -moz-transform: translate(0, 170%);
-  -ms-transform: translate(0, 170%);
-  -o-transform: translate(0, 170%);
+  transform: translate(-28px, 140%);
+  -webkit-transform: translate(-28px, 140%);
+  -moz-transform: translate(-28px, 140%);
+  -ms-transform: translate(-28px, 140%);
+  -o-transform: translate(-28px, 140%);
 }
 .banner-left .banner-inner .banner-left-content .title-left {
   text-align: right;
@@ -276,11 +277,11 @@ p {
   position: absolute;
   top: 50%;
   left: 50px;
-  transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
+  transform: translate(8%, -25%);
+  -webkit-transform: translate(8%, -25%);
+  -moz-transform: translate(8%, -25%);
+  -ms-transform: translate(8%, -25%);
+  -o-transform: translate(8%, -25%);
 }
 .banner-right-item-content .top-title-sub {
   font-size: 16px;
@@ -304,22 +305,23 @@ p {
   top: 20px;
 }
 .product-container .product-title {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   text-transform: uppercase;
 }
 .product-container .product-title .franco {
   color: #8a6cba;
-  font-size: 12px;
-  padding-bottom: 20px;
+  font-size: 13px;
+  padding-bottom: 11px;
+  letter-spacing: 6px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 5px;
+  font-weight: 700;
 }
 .product-container .product-title .featured {
   color: #000;
-  font-size: 24px;
+  font-size: 26px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .product-container .product-items {
   padding-bottom: 55px;
@@ -333,17 +335,19 @@ p {
   text-transform: uppercase;
   font-family: 'Montserrat';
   font-weight: 400;
-  padding: 15px 17px;
+  font-size: 12px;
+  padding: 15px 20px 14px;
   color: #000;
 }
 .product-container .product-items .product-info .title {
-  font-size: 20px;
+  font-size: 14px;
   padding-bottom: 7px;
   font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight: 600;
 }
 .product-container .product-items .product-info .rate {
   padding-top: 7px;
+  font-size: 13px;
   color: #e3e3e3;
 }
 .product-container .product-items .product-info .price {
@@ -369,7 +373,7 @@ p {
   width: 100%;
 }
 .product-container .product-items .product-info .product-info-item {
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
 }
 .product-container .product-items .product-info .product-info-item-thumbnail {
@@ -377,7 +381,7 @@ p {
   position: relative;
 }
 .product-container .product-items .product-info .product-info-item-content {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .product-container .product-items .product-info .product-info-item .img:hover {
   transform: scale(1.1);
@@ -403,25 +407,27 @@ p {
 .blog .col img {
   width: 100%;
 }
-.blog .title {
+.blog .blog-title {
   text-align: center;
-  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
-.blog .title .title-top {
+.blog .blog-title .title-top {
   font-size: 12px;
   color: #8262b5;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
-.blog .title .title-bottom {
+.blog .blog-title .title-bottom {
   font-size: 24px;
   letter-spacing: 2px;
-  padding-top: 10px;
-  padding-bottom: 29px;
+  padding-top: 5px;
+  padding-bottom: 17px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -429,7 +435,7 @@ p {
 .blog .blog-item {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 110px;
 }
 .blog .blog-item-info {
@@ -467,7 +473,7 @@ p {
 .blog .blog-item-content .title {
   padding-top: 20px;
   padding-bottom: 30px;
-  padding-right: 70px;
+  padding-left: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 .blog .blog-item-content .description {
@@ -503,7 +509,7 @@ p {
   color: #8262b5;
 }
 .blog .slick-dotted.slick-slider {
-  margin-bottom: 0;
+  margin-bottom: -35px;
 }
 .footer {
   background-color: #222222;
@@ -513,6 +519,9 @@ p {
   flex-direction: column;
   color: #7a7a7a;
   padding-top: 64px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
 }
 .footer-inner .footer-info {
   display: flex;
@@ -586,8 +595,16 @@ p {
   color: #7a7a7a;
 }
 @media screen and (max-width: 1200px) {
-  .header-bottom-inner .navbar-inner .nav-item {
-    margin-left: 0px;
+  .header-bottom-inner .navbar-inner .navbar .nav-item {
+    display: inline-block;
+    margin-left: 28px;
+    margin-right: 0px;
+  }
+  .header-bottom-inner .navbar-tool {
+    display: flex;
+  }
+  .blog-item {
+    margin: 0 -15px;
   }
   .footer .col {
     width: 33%;
@@ -609,15 +626,15 @@ p {
     padding: 0 15px;
     box-sizing: border-box;
   }
-  .header-bottom-inner .mobile-menu {
+  .header .header-bottom-inner .mobile-menu {
     display: block;
     font-size: 25px;
     text-transform: uppercase;
   }
-  .header-bottom-inner .menu-show {
+  .header .header-bottom-inner .menu-show {
     margin-left: 0 !important;
   }
-  .header-bottom-inner .menu {
+  .header .header-bottom-inner .menu {
     margin-left: -30vh;
     top: 0;
     left: 0;
@@ -628,7 +645,7 @@ p {
     width: 30vh;
     transition: all 0.5s ease;
   }
-  .header-bottom-inner .menu .navbar .nav-item {
+  .header .header-bottom-inner .menu .navbar .nav-item {
     display: block;
     padding: 10px 15px;
     border-top: 1px solid #ececec;
@@ -636,13 +653,13 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
-  .header-top-inner {
+  .header .header-top-inner {
     display: block;
   }
-  .header-top-inner .welcome {
+  .header .header-top-inner .welcome {
     display: none;
   }
-  .header-top-inner .header-top-shop {
+  .header .header-top-inner .header-top-shop {
     justify-content: space-between;
   }
   .banner-left {
@@ -740,6 +757,17 @@ p {
   }
 }
 @media screen and (max-width: 375px) {
+  .header .header-bottom-inner {
+    margin-left: 0px;
+  }
+  .header .header-bottom-inner .navbar-tool .navbar-tool-item {
+    font-size: 27px;
+    padding-left: 5px;
+    color: #000;
+  }
+  .header .header-bottom-inner .navbar-logo {
+    padding-left: 25px;
+  }
   .product-items .product-info .col {
     width: 100%;
     padding: 0 15px;

@@ -1,14 +1,18 @@
 .banner{
     margin: 30px 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     .banner-col {
         margin: -15px 0;
     }
     .btn-shop-now{
         background-color: #8262b5;
-        padding: 15px;
+        padding: 13px 17px;
         text-transform: capitalize;
         color: #fff;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
     }
     &-left{
         .cols(66.67%);
@@ -32,7 +36,7 @@
                 position: absolute;
                 left: 50%;
                 bottom: 50%;
-                .transformer(translate(0, 170%));
+                .transformer(translate(-28px, 140%));
                 .title-left{
                     text-align: right;
                 }
@@ -76,7 +80,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50px;
-                .transformer(translate(0, -50%));
+                .transformer(translate(8%, -25%));
 
                 .top-title-sub{
                     font-size: 16px;
@@ -108,22 +112,22 @@
 
 .product-container{
     .product-title{
-        padding-bottom: 25px;
-        
+        padding-bottom: 30px;
         text-transform: uppercase;
         .franco{
             color: #8a6cba;
-            font-size: 12px;
-            padding-bottom: 20px;
+            font-size: 13px;
+            padding-bottom: 11px;
+            letter-spacing: 6px;
             font-family: 'Montserrat', sans-serif;
-            font-weight: 5px;
+            font-weight: 700;
         }
         .featured{
             color: #000;
-            font-size: 24px;
+            font-size: 26px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
         }
     }
     .product-items{
@@ -139,17 +143,19 @@
                 text-transform: uppercase;
                 font-family: 'Montserrat';
                 font-weight: 400;
-                padding: 15px 17px;
+                font-size: 12px;
+                padding: 15px 20px 14px;
                 color: #000;
             }
             .title{
-                font-size: 20px;
+                font-size: 14px;
                 padding-bottom: 7px;
                 font-family: 'Montserrat';
-                font-weight: 400;
+                font-weight: 600;
             }
             .rate{
                 padding-top: 7px;
+                font-size: 13px;
                 color: #e3e3e3;
             }
             .price{
@@ -175,10 +181,10 @@
                     overflow: hidden;
                     position: relative;
                 }
-                padding-top: 25px;
+                padding-top: 20px;
                 padding-bottom: 25px;
                 &-content{
-                    padding-top: 20px;
+                    padding-top: 10px;
                 }
                 .img{
                     &:hover {
@@ -208,13 +214,15 @@
     background: url(../images/bg-blog.png) no-repeat;
     width: 100%;
     background-size: cover;
-    .title{
+    .blog-title{
         text-align: center;
-        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
         .title-top{
             font-size: 12px;
             color: #8262b5;
-            padding-top: 80px;
+            padding-top: 60px;
             padding-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 6px;
@@ -224,8 +232,8 @@
         .title-bottom{
             font-size: 24px;
             letter-spacing: 2px;
-            padding-top: 10px;
-            padding-bottom: 29px;
+            padding-top: 5px;
+            padding-bottom: 17px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
@@ -234,7 +242,7 @@
     .blog-item {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 50px;
+        padding-top: 35px;
         padding-bottom: 110px;
         &-info{
             position: relative;
@@ -261,6 +269,7 @@
                     .day{
                         font-weight: bold;
                     }
+
                 }
             }
         }
@@ -273,7 +282,7 @@
             .title{
                 padding-top: 20px;
                 padding-bottom: 30px;
-                padding-right: 70px;
+                padding-left: 15px;
                 font-family: 'Montserrat', sans-serif;
             }
             .description{
@@ -318,7 +327,7 @@
         }
     }
     .slick-dotted.slick-slider{
-        margin-bottom: 0;
+        margin-bottom: -35px;
     }
 }
 

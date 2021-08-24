@@ -2,7 +2,7 @@
     border-bottom: 1px solid #ddd;
 
     .header-top{
-        height: 47px;
+        height: 45px;
         background-color: #222;
         color: #525252;
         display: flex;
@@ -49,15 +49,14 @@
                 display: none;
             }
             .navbar{
-                padding: 15px 0;
+                // padding: 15px 0;
                 font-family: 'Montserrat';
                 font-weight: 700;
                 text-transform: uppercase;
                 font-size: 14px;
                 .nav-item{
                     display: inline-block;
-                    margin-left: 28px;
-                    margin-right: 29px;
+                    margin-right: 50px;
                     &:hover{
                         a{
                             color: #8262b5;
@@ -73,24 +72,26 @@
                         }
                     }
                 }
-                .nav-search{
-                    margin-left: 28px;
+            }
+            .navbar-logo{
+                width: 200px;
+                height: 40px;
+            }
+            .navbar-tool{
+                .navbar-tool-item{
+                    // margin: 0 15px;
+                    i {
+                        font-size: 30px;
+                        padding-left: 10px;
+                        color: #000;
+                    }
                 }
             }
         }
         .mobile-menu{
             display: none;
         }
-        .navbar-tool{
-            .navbar-tool-item{
-                margin: 0 15px;
-                i {
-                    font-size: 30px;
-                    // padding-left: 28px;
-                    color: #000;
-                }
-            }
-        }
+        
     }
 }
 
