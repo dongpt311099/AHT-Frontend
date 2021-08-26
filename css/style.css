@@ -24,11 +24,6 @@
   font-weight: 700;
 }
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
   font-family: 'Pacifico';
   src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
   font-weight: 400;
@@ -256,9 +251,8 @@ p {
 }
 .banner-right {
   width: calc(100% / 12 * 4);
-  padding: 0 15px;
   box-sizing: border-box;
-  padding: 0 0 0 30px;
+  padding: 0 15px;
 }
 .banner-right-item {
   position: relative;
@@ -315,6 +309,7 @@ p {
 }
 .product-container .product-title {
   padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .product-container .product-title .line {
@@ -324,15 +319,15 @@ p {
 }
 .product-container .product-title .franco {
   color: #8a6cba;
-  font-size: 13px;
-  padding-bottom: 10px;
+  font-size: 12px;
+  padding-bottom: 11px;
   letter-spacing: 6px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 .product-container .product-title .featured {
   color: #000;
-  font-size: 25px;
+  font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-bottom: 23px;
@@ -353,17 +348,20 @@ p {
   color: #000;
 }
 .product-container .product-items .product-info .title {
-  font-size: 14px;
-  font-family: 'Montserrat';
-  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 .product-container .product-items .product-info .rate {
+  letter-spacing: -1px;
   padding-top: 10px;
   color: #e3e3e3;
 }
 .product-container .product-items .product-info .price {
   display: flex;
   padding: 7px 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 .product-container .product-items .product-info .price .cost {
   color: #999999;
@@ -371,6 +369,10 @@ p {
 }
 .product-container .product-items .product-info .price .sale-price {
   padding-left: 5px;
+  color: #8262b5;
+  font-weight: bold;
+}
+.product-container .product-items .product-info .price .sale-price1 {
   color: #8262b5;
   font-weight: bold;
 }
@@ -426,12 +428,12 @@ p {
   font-weight: 400;
 }
 .blog .blog-title .title-top {
-  font-size: 12px;
+  font-size: 13px;
   color: #8262b5;
   padding-top: 75px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
@@ -499,10 +501,11 @@ p {
   padding-bottom: 17px;
   border-bottom: 1px solid #ededed;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 23px;
   color: #424242;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.25px;
   font-family: 'OpenSans', sans-serif;
+  font-weight: 500;
 }
 .blog .blog-item-content .icons {
   display: flex;
@@ -528,7 +531,7 @@ p {
   color: #8262b5;
 }
 .blog .slick-dotted.slick-slider {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 .footer {
   background-color: #222222;
@@ -548,7 +551,7 @@ p {
   align-items: center;
   margin: 0 -15px;
   align-items: flex-start;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 .footer-inner .footer-info .col {
   width: calc(100% / 12 * 3);
@@ -556,23 +559,24 @@ p {
 .footer-inner .footer-info .col .title {
   color: #fff;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   border-bottom: 1px solid #7a7a7a;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 .footer-inner .footer-info .col .content {
   font-size: 14px;
   line-height: 22px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.25px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .footer-inner .footer-info .col .footer-icon-social {
   padding-top: 43px;
 }
 .footer-inner .footer-info .col .social-icon {
   color: #7a7a7a;
-  padding-right: 17px;
+  padding-right: 30px;
 }
 .footer-inner .footer-info .footer-navigation {
   width: calc(100% / 12 * 4);
@@ -581,30 +585,43 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .footer-inner .footer-info .footer-navigation .navigation-content .footer-navigation-items {
   width: calc(100% / 12 * 6);
 }
+.footer-inner .footer-info .footer-navigation .navigation-content .footer-navigation-items:first-child {
+  padding-left: 0px;
+}
 .footer-inner .footer-info .footer-navigation .navigation-content .footer-navigation-items .footer-navigation-item .footer-navigation-link {
   color: #7a7a7a;
-  line-height: 29px;
+  line-height: 30px;
 }
-.footer-inner .footer-info .footer-location .location-items,
-.footer-inner .footer-info .footer-location .location-item-text {
+.footer-inner .footer-info .footer-location .title {
+  margin-bottom: 21px;
+}
+.footer-inner .footer-info .footer-location .items-detail {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+}
+.footer-inner .footer-info .footer-location .items-detail .icon {
+  margin-right: 15px;
+}
+.footer-inner .footer-info .footer-location .items-detail a {
   color: #7a7a7a;
 }
-.footer-inner .footer-info .footer-location .location-items .location-item,
-.footer-inner .footer-info .footer-location .location-item-text .location-item {
-  padding-bottom: 7px;
-  line-height: 33px;
-  font-size: 13px;
+.footer-inner .footer-info .footer-location .items-detail .address {
+  display: flex;
 }
-.footer-inner .footer-info .footer-location .location-items .location-item i,
-.footer-inner .footer-info .footer-location .location-item-text .location-item i {
-  font-size: 15px;
+.footer-inner .footer-info .footer-location .items-detail .phone-number {
+  display: flex;
 }
-.footer-inner .footer-info .footer-location .location {
-  padding: 0 23px;
+.footer-inner .footer-info .footer-location .items-detail .email {
+  display: flex;
 }
 .footer-inner .footer-bottom {
   display: flex;
@@ -617,9 +634,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.footer-inner .footer-bottom .wrapper .footer-copyright {
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-family: 'OpenSans', sans-serif;
+  letter-spacing: 0.5px;
 }
 .footer-inner .footer-bottom .arrowHitech {
   color: #fff;
@@ -628,7 +645,7 @@ p {
   color: #7a7a7a;
 }
 .footer-inner .footer-bottom .footer-payment .payment i {
-  font-size: 23px;
+  font-size: 24px;
 }
 @media screen and (max-width: 1200px) {
   .header-bottom-inner .navbar-inner .navbar .nav-item {
@@ -830,3 +847,4 @@ p {
     margin: 0;
   }
 }
+/*# sourceMappingURL=style.css.map */
