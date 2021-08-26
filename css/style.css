@@ -638,6 +638,9 @@ p {
   font-family: 'OpenSans', sans-serif;
   letter-spacing: 0.5px;
 }
+.footer-inner .footer-bottom .wrapper .footer-copyright .white-text {
+  color: #fff;
+}
 .footer-inner .footer-bottom .arrowHitech {
   color: #fff;
 }
