@@ -486,7 +486,7 @@ p {
   padding-bottom: 22px;
 }
 .blog .blog-item-content .title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -598,6 +598,10 @@ p {
   color: #7a7a7a;
   line-height: 30px;
 }
+.footer-inner .footer-info .footer-navigation .navigation-content .footer-navigation-items .footer-navigation-item .footer-navigation-link:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 .footer-inner .footer-info .footer-location .title {
   margin-bottom: 21px;
 }
@@ -616,6 +620,10 @@ p {
 }
 .footer-inner .footer-info .footer-location .items-detail .address {
   display: flex;
+}
+.footer-inner .footer-info .footer-location .items-detail .address .description a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 .footer-inner .footer-info .footer-location .items-detail .phone-number {
   display: flex;
@@ -685,6 +693,9 @@ p {
     padding: 0 15px;
     box-sizing: border-box;
   }
+  .header .header-bottom-inner {
+    margin: 0;
+  }
   .header .header-bottom-inner .mobile-menu {
     display: block;
     font-size: 25px;
@@ -745,6 +756,14 @@ p {
   .banner-right-item-content .top-title {
     font-size: 30px;
   }
+  .product-container .product-items .product-info .col {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .product-container .product-items .product-info-item .btn-add {
+    padding: 15px 7px;
+  }
   .product-items .product-info .col {
     width: 50%;
   }
@@ -768,8 +787,8 @@ p {
   }
   .banner-left .banner-inner .banner-left-content {
     font-size: 22px;
-    left: 40%;
-    bottom: 65%;
+    left: 55%;
+    bottom: 36%;
     transform: translate(-25%, 50%);
   }
   .banner-left .banner-inner .banner-left-content .title-left {
@@ -783,14 +802,6 @@ p {
   }
   .banner-right-item-content .top-title {
     font-size: 22px;
-  }
-  .product-container .product-items .product-info .col {
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  .product-container .product-items .product-info-item .btn-add {
-    padding: 15px 7px;
   }
   .footer-inner .footer-bottom .wrapper {
     flex-wrap: wrap;
@@ -836,7 +847,7 @@ p {
     color: #000;
   }
   .header .header-bottom-inner .navbar-logo {
-    padding-left: 25px;
+    padding-left: 5px;
   }
   .product-container .product-items .product-info .col {
     width: 100%;

@@ -47,6 +47,7 @@
     .header{
         .header-bottom{
             &-inner{
+                margin: 0;
                 .mobile-menu{
                     display: block;
                     font-size: 25px;
@@ -125,6 +126,22 @@
            }
         }
     }
+    .product-container{
+        .product-items{
+            .product-info{
+                .col {
+                    width: 50%;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                }
+                &-item{
+                    .btn-add{
+                        padding: 15px 7px;
+                    }
+                }
+            }
+        }
+    }
     .product-items{
         .product-info{
             .col {
@@ -162,8 +179,8 @@
             .banner-inner{
                 .banner-left-content{
                     font-size: 22px;
-                    left: 40%;
-                    bottom: 65%;
+                    left: 55%;
+                    bottom: 36%;
                     transform: translate(-25%, 50%);            
                     .title-left{
                         font-size: 22px;
@@ -186,22 +203,22 @@
            }
         }
     }
-    .product-container{
-        .product-items{
-            .product-info{
-                .col {
-                    width: 50%;
-                    padding: 0 15px;
-                    box-sizing: border-box;
-                }
-                &-item{
-                    .btn-add{
-                        padding: 15px 7px;
-                    }
-                }
-            }
-        }
-    }
+    // .product-container{
+    //     .product-items{
+    //         .product-info{
+    //             .col {
+    //                 width: 50%;
+    //                 padding: 0 15px;
+    //                 box-sizing: border-box;
+    //             }
+    //             &-item{
+    //                 .btn-add{
+    //                     padding: 15px 7px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     
     .footer{
         &-inner{
@@ -268,7 +285,7 @@
                     }
                 }
                 .navbar-logo{
-                    padding-left: 25px;
+                    padding-left: 5px;
                 }
             }
         }
